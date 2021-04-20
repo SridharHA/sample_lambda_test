@@ -1,0 +1,16 @@
+gatewayLambda:
+    handler: index.handler
+    name: lambda-test
+    description: Lambda function for apigateway-test
+    role: arn:aws:iam::#{AWS::AccountId}:role/lambda_role
+    maximumRetryAttempts: 0
+    events:
+      - http:
+          path: test
+          method: get
+          request:
+             parameters:
+               querystrings:
+                  email: true
+                  password: true
+
