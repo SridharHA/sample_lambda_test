@@ -8,9 +8,4 @@ gatewayLambda:
       - http:
           path: test
           method: get
-          request:
-             parameters:
-               querystrings:
-                  email: true
-                  password: true
-
+          
