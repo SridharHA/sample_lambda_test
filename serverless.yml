@@ -14,7 +14,7 @@ provider:
       Principal: '*'
       Action: execute-api:Invoke
       Resource:
-        - execute-api:/${opt:stage, self:provider.stage}/GET/test
+        - execute-api:/${opt:stage, self:provider.stage}/POST/test
       
 plugins:
   - serverless-pseudo-parameters
