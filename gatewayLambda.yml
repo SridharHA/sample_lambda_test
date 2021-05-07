@@ -7,5 +7,5 @@ gatewayLambda:
     events:
       - http:
           path: test
-          method: get
+          method: post
           
